@@ -47,7 +47,7 @@
 			<Center>
 		<font style="color:#2196F3"><h1>Festival RESTful API Web Client</h1></font>
 		<h3><p><font>Please input text in English : </font></p>
-		<form id="text2waveForm" method="get" action="http://localhost:8183/api/wave" enctype="multipart/form-data" target="myiframe" onsubmit="return checkGetForm(this)">		
+		<form id="text2waveForm" method="get" action="http://localhost:8183/api/txt2waveResource" enctype="multipart/form-data" target="myiframe" onsubmit="return checkGetForm(this)">		
 			<textarea id="txt" name="txt" rows="10" cols="45"></textarea>
 			<h3><p><font>API Token : </font><input id="token" name="token" type="password"/></input></p>
 			<p></p>
@@ -58,7 +58,7 @@
 		<div style="margin: 0 auto; width:25%;padding-top:40px;">
 		<p><font><h3>Or upload scm file here : </h3></font></p>
 		<p></p>
-		<form method="post" action="http://localhost:8183/api/waveResource" enctype="multipart/form-data" target="myiframe" onsubmit="return checkPostForm(this)">
+		<form method="post" action="http://localhost:8183/api/file2waveResource" enctype="multipart/form-data" target="myiframe" onsubmit="return checkPostForm(this)">
 			
 		<p><input id="file" type="file" name="fileToUpload" /></p>
 		
